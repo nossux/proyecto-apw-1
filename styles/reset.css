@@ -1,5 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
   font-family: "Nunito Variable", sans-serif;
+}
+
+img {
+  user-select: none;
 }

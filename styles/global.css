@@ -1,3 +1,36 @@
 :root {
   --primary: #0a74ff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* botones */
+
+.button {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.button-contact {
+  background-color: var(--primary);
+}
+
+.button-primary {
+  background-color: var(--primary);
+}
+
+a.button-primary {
+  color: white;
+}
+
+.button:hover {
+  background-color: #3482e2;
+}
+
+li a.button {
+  color: white;
+}
