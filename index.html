@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/landing.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
+    <!-- global -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
+
+    <!-- landing -->
+    <link rel="stylesheet" href="styles/landing.css" />
+
+    <!-- Acerca de -->
+    <link rel="stylesheet" href="styles/acerca-de.css" />
     <title>Proyecto APW</title>
   </head>
   <body>
@@ -19,7 +25,7 @@
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="acerca-de.html">Acerca de</a></li>
+          <li><a href="#acerca-de">Acerca de</a></li>
           <li><a href="servicios.html">Servicios</a></li>
         </ul>
         <ul class="nav-links">
@@ -39,14 +45,15 @@
             </div>
             <h1>Soluciones Informáticas en el Centro de <span>Majada</span></h1>
             <p>
-              Creamos y mantenemos infraestructuras seguras, rápidas y fiables para que
-              nuestras aulas y sitios del centro puedan gozar de buena conexión.
+              Creamos y mantenemos infraestructuras seguras, rápidas y fiables
+              para que nuestras aulas y sitios del centro puedan gozar de buena
+              conexión.
             </p>
             <div class="landing-buttons">
               <a href="servicios.html" class="button button-primary full-width"
                 >Nuestros Servicios</a
               >
-              <a href="acerca-de.html" class="button button-secondary full-width"
+              <a href="#acerca-de" class="button button-secondary full-width"
                 >Conoce más</a
               >
             </div>
@@ -57,6 +64,35 @@
             alt="Landing"
           />
         </div>
+      </section>
+      <section id="acerca-de">
+        <header>
+          <h1 class="title">Acerca de nosotros</h1>
+          <p class="description">Conócenos un poquito más</p>
+        </header>
+        <main class="acerca-de">
+          <img src="/assets/images/sobre-nosotros.webp" alt="Sobre Nosotros" width="400" height="400" />
+          <div>
+            <p>
+              Somos una iniciativa del CIFP Majada Marcial dedicada al
+              mantenimiento y reparación de equipos informáticos. Nos
+              especializamos en el área de redes, ofreciendo apoyo técnico al
+              alumnado y al personal del centro.
+            </p>
+            <p>
+              Nos encargamos del mantenimiento de la infraestructura de red,
+              asegurando su funcionamiento estable. También realizamos
+              reparaciones y sustituimos latiguillos o componentes en mal
+              estado.
+            </p>
+            <p>
+              Además, gestionamos servicios esenciales como DHCP y DNS para que
+              la red del centro opere correctamente. Nuestro objetivo es
+              garantizar un entorno tecnológico fiable para todas las
+              actividades del instituto.
+            </p>
+          </div>
+        </main>
       </section>
     </main>
   </body>

@@ -1,0 +1,36 @@
+body {
+  font-family: "Nunito Variable", sans-serif;
+}
+
+.acerca-de {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 32px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(54, 54, 54);
+}
+
+.acerca-de img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.acerca-de p {
+  color: rgb(80, 80, 80);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 0.2;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+}
