@@ -26,8 +26,15 @@
 }
 
 .landing-content h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 0;
+  text-transform: uppercase;
+  text-wrap: inherit;
+}
+
+.landing-content h1 span {
+  color: var(--primary);
+  text-decoration-line: underline;
 }
 
 .landing-content p {
