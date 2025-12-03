@@ -18,10 +18,10 @@
 
     <!-- Servicios -->
     <link rel="stylesheet" href="styles/servicios.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <title>Proyecto APW</title>
   </head>
   <body>
-
     <div class="content">
       <header class="header">
         <nav class="navbar">
@@ -35,7 +35,7 @@
           </ul>
           <ul class="nav-links">
             <li>
-              <a href="#contact" class="button button-contact">Contacto</a>
+              <a href="#contacto" class="button button-contact">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -44,9 +44,11 @@
         <section class="landing" id="home">
           <div class="landing-cols">
             <section class="landing-content">
-                <div class="landing-bubble">
-                <span>Abrimos el 8 de enero para alumnos y padres. ¡Gratis!</span>
-                </div>
+              <div class="landing-bubble">
+                <span
+                  >Abrimos el 8 de enero para alumnos y padres. ¡Gratis!</span
+                >
+              </div>
               <h1>
                 Soluciones Informáticas en el Centro de <span>Majada</span>
               </h1>
@@ -56,10 +58,8 @@
                 buena conexión.
               </p>
               <div class="landing-buttons">
-                <a
-                  href="#servicios"
-                  class="button button-primary full-width"
-                  >Nuestros Servicios</a
+                <a href="#servicios" class="button button-primary full-width"
+                  >Servicios</a
                 >
                 <a href="#acerca-de" class="button button-secondary full-width"
                   >Conoce más</a
@@ -116,18 +116,85 @@
             <article class="servicio-card">
               <div class="icon">🖥️</div>
               <h3>Soporte y reparación</h3>
-              <p>Diagnóstico y reparación de equipos, reemplazo de piezas y mantenimiento.</p>
+              <p>
+                Diagnóstico y reparación de equipos, reemplazo de piezas y
+                mantenimiento.
+              </p>
             </article>
             <article class="servicio-card">
               <div class="icon">🌐</div>
               <h3>Redes y conectividad</h3>
-              <p>Instalación y mantenimiento de redes, configuración de DHCP/DNS y Wi‑Fi.</p>
+              <p>
+                Instalación y mantenimiento de redes, configuración de DHCP/DNS
+                y Wi‑Fi.
+              </p>
             </article>
             <article class="servicio-card">
               <div class="icon">🔒</div>
               <h3>Seguridad y formación</h3>
-              <p>Medidas de seguridad y sesiones formativas para alumnado y profesorado.</p>
+              <p>
+                Medidas de seguridad y sesiones formativas para alumnado y
+                profesorado.
+              </p>
             </article>
+          </div>
+        </section>
+        <section id="contacto" class="contacto">
+          <header>
+            <h1 class="title">Contacto</h1>
+            <p class="description">Ponte en contacto con nosotros</p>
+          </header>
+          <div class="contact-grid">
+            <aside class="contact-info">
+              <p>
+                Si tienes dudas o necesitas soporte, escríbenos o ven al centro.
+              </p>
+              <ul>
+                <li><strong>Dirección:</strong> CIFP Majada Marcial</li>
+                <li><strong>Teléfono:</strong> 600 000 000</li>
+                <li><strong>Email:</strong> contacto@majada.example</li>
+              </ul>
+            </aside>
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-input">
+                <label for="name">Nombre</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+
+              <div class="contact-input">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="contact-input">
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Tu mensaje"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="button button-primary full-width">
+                  Enviar
+                </button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
