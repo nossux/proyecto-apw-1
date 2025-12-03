@@ -15,13 +15,17 @@ html {
 .button {
   display: inline-block;
   color: white;
+  border: none;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
   padding: 18px 32px;
   border-radius: 10px;
   text-transform: capitalize;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
-  transition: background-color 180ms ease, box-shadow 180ms ease, transform 120ms ease, color 180ms ease;
+  transition: background-color 180ms ease, box-shadow 180ms ease,
+    transform 120ms ease, color 180ms ease;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -51,9 +55,37 @@ li a.button {
   outline: none;
 }
 .button:focus-visible {
-  box-shadow: 0 0 0 3px rgba(10,120,255,0.14);
+  box-shadow: 0 0 0 3px rgba(10, 120, 255, 0.14);
+}
+
+button.button,
+input[type="button"].button,
+input[type="submit"].button,
+input[type="reset"].button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  font-family: var(--font-sans);
+  box-sizing: border-box;
+}
+
+.button:disabled,
+button.button:disabled,
+input.button:disabled,
+input[type="submit"].button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .full-width {
   width: 100%;
+}
+
+input {
+  font-family: var(--font-sans);
+}
+
+textarea {
+  font-family: var(--font-sans);
 }

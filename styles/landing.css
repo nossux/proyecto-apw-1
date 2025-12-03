@@ -9,6 +9,18 @@
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .landing-cols {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .landing-content {
+    margin: 2rem;
+  }
+}
+
 .landing-bubble {
   background-color: var(--primary);
   color: white;
