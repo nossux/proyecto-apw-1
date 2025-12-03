@@ -9,6 +9,14 @@
   display: flex;
 }
 
+.landing-bubble {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
 .landing-content {
   position: relative;
   z-index: 1;
@@ -16,13 +24,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 4rem;
-}
-
-.landing-reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
 }
 
 .landing-content h1 {
