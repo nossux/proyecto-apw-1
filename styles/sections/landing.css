@@ -24,9 +24,11 @@
 .landing-bubble {
   background-color: var(--primary);
   color: white;
+  margin-top: 3.2rem;
   padding: 8px 16px;
   border-radius: 20px;
   width: fit-content;
+  text-align: left;
 }
 
 .landing-content {
