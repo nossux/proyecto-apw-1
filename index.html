@@ -19,6 +19,7 @@
 
     <!-- Servicios -->
     <link rel="stylesheet" href="styles/sections/servicios.css" />
+    <link rel="stylesheet" href="styles/sections/horario.css" />
     <link rel="stylesheet" href="styles/sections/contact.css" />
     <title>Proyecto APW</title>
   </head>
@@ -42,7 +43,7 @@
         </nav>
       </header>
       <main>
-        <section class="landing" id="home">
+        <section class="landing" id="landing">
           <div class="landing-cols">
             <section class="landing-content">
               <div class="landing-bubble">
@@ -138,6 +139,37 @@
                 profesorado.
               </p>
             </article>
+          </div>
+        </section>
+        <section id="horario" class="horario">
+          <header>
+            <h1 class="title">Horario de atención</h1>
+            <p class="description">Abrimos de lunes a viernes — Mañana y tarde</p>
+          </header>
+
+          <div class="horario-container">
+            <table class="horario-table" aria-label="Horario de lunes a viernes">
+              <thead>
+                <tr>
+                  <th>Horario</th>
+                  <th>Lun</th>
+                  <th>Mar</th>
+                  <th>Mié</th>
+                  <th>Jue</th>
+                  <th>Vie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Mañana</th>
+                  <td colspan="5">08:00 — 14:00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tarde</th>
+                  <td colspan="5">16:00 — 22:00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
         <section id="contact" class="contacto">

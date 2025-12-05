@@ -30,7 +30,6 @@ a {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-weight: 600;
-  text-transform: uppercase;
   color: black;
   font-family: var(--font-heading);
 }
