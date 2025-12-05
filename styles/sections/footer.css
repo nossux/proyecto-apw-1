@@ -1,54 +1,97 @@
-.navbar {
-  position: relative;
+.footer {
+  color: #424242;
+  padding: 3rem 1.2rem;
+  font-size: 0.95rem;
+}
+
+.footer .footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1 1 24px;
+  min-width: 200px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-brand img {
+  height: 48px;
+}
+
+.footer h3 {
+  margin: 0 0 0.25rem 0;
+  color: black;
+  font-size: 1.05rem;
+}
+
+.footer .muted {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.footer h4 {
+  margin: 0 0 0.75rem 0;
+  color: black;
+  font-size: 1rem;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer a {
+  color: #424242;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, opacity 0.15s;
+  opacity: 0.95;
+}
+
+.footer a:hover {
+  color: black;
+  opacity: 1;
+}
+
+.footer .legal {
+  border-top: 1px solid rgba(255,255,255,0.04);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  width: 100%;
-
-  color: var(--primary);
-  padding: 1.2rem 1.2rem;
-}
-
-.navbar-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.navbar-brand img {
-    width: fit-content;
-}
-
-.navbar-brand span {
-    text-transform: none;
-    color: gray;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: #424242;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .footer .footer-container {
+    flex-direction: column;
+    gap: 1.25rem;
   }
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: black;
-  font-family: var(--font-heading);
-}
-
-a:hover {
-  color: var(--primary);
+  .footer .legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }

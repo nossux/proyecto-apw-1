@@ -6,19 +6,20 @@
     <!-- global -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
+
+    <link rel="stylesheet" href="styles/sections/header.css" />
+    <link rel="stylesheet" href="styles/sections/footer.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
 
     <!-- landing -->
-    <link rel="stylesheet" href="styles/landing.css" />
+    <link rel="stylesheet" href="styles/sections/landing.css" />
 
     <!-- Acerca de -->
-    <link rel="stylesheet" href="styles/acerca-de.css" />
+    <link rel="stylesheet" href="styles/sections/acerca-de.css" />
 
     <!-- Servicios -->
-    <link rel="stylesheet" href="styles/servicios.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/sections/servicios.css" />
+    <link rel="stylesheet" href="styles/sections/contact.css" />
     <title>Proyecto APW</title>
   </head>
   <body>
@@ -150,9 +151,9 @@
                 Si tienes dudas o necesitas soporte, escríbenos o ven al centro.
               </p>
               <ul>
-                <li><strong>Dirección:</strong> CIFP Majada Marcial</li>
-                <li><strong>Teléfono:</strong> 600 000 000</li>
-                <li><strong>Email:</strong> contacto@majada.example</li>
+                <li><strong>Dirección:</strong> CIFP Majada Marcial (Aula ATECA)</li>
+                <li><strong>Teléfono:</strong> 123 456 7890</li>
+                <li><strong>Email:</strong> contact@majadanet.com</li>
               </ul>
             </aside>
             <form class="contact-form" action="#" method="post">
@@ -199,22 +200,37 @@
         </section>
       </main>
       <footer class="footer">
-        <nav class="navbar">
-          <a class="navbar-brand" href="/">
-            <img src="/assets/images/logo.webp" alt="Majada Logo" height="60" />
-            <span>Copyright 2025 MajadaNet</span>
-          </a>
-          <ul class="nav-links">
-            <li><a href="#landing">Inicio</a></li>
-            <li><a href="#acerca-de">Acerca de</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-          </ul>
-          <ul class="nav-links">
-            <li>
-              <a href="#contact" class="button button-contact">Contacto</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-container">
+          <div class="footer-col footer-brand">
+            <a href="/">
+              <img src="/assets/images/logo.webp" alt="Majada Logo" />
+            </a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Enlaces</h4>
+            <ul class="footer-links">
+              <li><a href="#landing">Inicio</a></li>
+              <li><a href="#acerca-de">Acerca de</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul class="footer-contact">
+              <li><strong>Dirección:</strong> CIFP Majada Marcial (Aula ATECA)</li>
+              <li><strong>Tel:</strong> <a href="tel:+600000000">123 456 7890</a></li>
+              <li><strong>Email:</strong> <a href="mailto:contact@majadanet.com">contact@majadanet.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="legal">
+          <span>© 2025 MajadaNet. Todos los derechos reservados.</span>
+          <span>Diseñado por Ricardo y Rául</span>
+        </div>
       </footer>
     </div>
   </body>
