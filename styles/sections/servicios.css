@@ -52,6 +52,21 @@
   line-height: 1.4;
 }
 
+.servicio-card h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.servicio-card small {
+  font-size: 0.85rem;
+  color: #888;
+}
+
 @media (max-width: 480px) {
   .servicio-card {
     padding: 1rem;
