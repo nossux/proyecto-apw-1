@@ -40,6 +40,42 @@ body {
   color: rgb(100, 100, 100);
 }
 
+.acerca-de h2 {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.acerca-de h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.acerca-de h4 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.acerca-de h5 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.acerca-de h6 {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
 @media (min-width: 481px) {
   .acerca-de {
     gap: 20px;
