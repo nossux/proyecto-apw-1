@@ -3,6 +3,7 @@
   margin: 0 auto;
   background: #ffffff;
   border-radius: 10px;
+  padding: 0 1.5rem;
 }
 
 .horario-title {
@@ -49,12 +50,35 @@
   border-top: none;
 }
 
-/* Lighter row separation for desktop */
 .horario-table tbody tr:nth-child(even) td {
   background: #fbfbfb;
 }
 
-/* Mobile-friendly layout */
+.horario-table caption {
+  caption-side: top;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  color: #2c3e50;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 8px 8px 0 0;
+}
+
+.horario-table tfoot {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.horario-table tfoot td {
+  padding: 0.9rem 0.6rem;
+  text-align: center;
+  color: #666;
+  background-color: #f8f9fa;
+  border-top: 2px solid #ddd;
+}
+
 @media (max-width: 640px) {
   .horario {
     padding: 2rem 1rem;
@@ -62,6 +86,16 @@
   .horario-container {
     padding: 0.75rem;
     border-radius: 8px;
+  }
+  .horario-title {
+    font-size: 1.8rem;
+  }
+  .horario-table caption {
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    width: max-content;
+    margin-bottom: 12px;
   }
   .horario-table thead {
     display: none;
@@ -83,9 +117,26 @@
   }
   .horario-table tbody th {
     background: #f7f8fa;
-    padding: 0.75rem 0.75rem;
+    padding: 0.75rem;
+    font-size: 1.05rem;
+    width: 100%;
   }
   .horario-table td {
     padding: 0.6rem 0.75rem;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+  }
+  .horario-table tfoot {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .horario-table tfoot td {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border-top: none;
+    font-size: 0.9rem;
   }
 }
