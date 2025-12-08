@@ -1,269 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- global -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
 
-    <link rel="stylesheet" href="styles/sections/header.css" />
-    <link rel="stylesheet" href="styles/sections/footer.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- global -->
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/global.css" />
 
-    <!-- landing -->
-    <link rel="stylesheet" href="styles/sections/landing.css" />
+  <link rel="stylesheet" href="styles/sections/header.css" />
+  <link rel="stylesheet" href="styles/sections/footer.css" />
+  <link rel="stylesheet" href="styles/fonts.css" />
 
-    <!-- Acerca de -->
-    <link rel="stylesheet" href="styles/sections/acerca-de.css" />
+  <!-- landing -->
+  <link rel="stylesheet" href="styles/sections/landing.css" />
 
-    <!-- Servicios -->
-    <link rel="stylesheet" href="styles/sections/servicios.css" />
-    <link rel="stylesheet" href="styles/sections/horario.css" />
-    <link rel="stylesheet" href="styles/sections/contact.css" />
-    <title>Proyecto APW</title>
-  </head>
-  <body>
-    <div class="content">
-      <header class="header">
-        <nav class="navbar">
+  <!-- Acerca de -->
+  <link rel="stylesheet" href="styles/sections/acerca-de.css" />
+
+  <!-- Servicios -->
+  <link rel="stylesheet" href="styles/sections/servicios.css" />
+  <link rel="stylesheet" href="styles/sections/horario.css" />
+  <link rel="stylesheet" href="styles/sections/contact.css" />
+  <title>Proyecto APW</title>
+</head>
+
+<body>
+  <div class="content">
+    <header class="header">
+      <nav class="navbar">
+        <a href="/">
+          <img src="/assets/images/logo.webp" alt="Majada Logo" height="60" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#landing">Inicio</a></li>
+          <li><a href="#acerca-de">Acerca de</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+        </ul>
+        <ul class="nav-links">
+          <li>
+            <a href="#contact" class="button button-contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="landing" id="landing">
+        <div class="landing-cols">
+          <section class="landing-content">
+            <div class="landing-bubble">
+              <span>Abrimos el 8 de enero para alumnos y padres. ¡Gratis!</span>
+            </div>
+            <h1>
+              Soluciones Informáticas en el Centro de <span>Majada</span>
+            </h1>
+            <p>
+              Creamos y mantenemos <strong>infraestructuras seguras, rápidas y fiables</strong>
+              para que nuestras aulas y sitios del centro puedan gozar de
+              buena conexión.
+            </p>
+            <div class="landing-buttons">
+              <a href="#servicios" class="button button-primary full-width">Servicios</a>
+              <a href="#acerca-de" class="button button-secondary full-width">Conoce más</a>
+            </div>
+          </section>
+          <img class="landing-image" src="/assets/images/landing.webp" alt="Landing" />
+        </div>
+      </section>
+      <section id="acerca-de">
+        <header>
+          <h1 class="title">Acerca de nosotros</h1>
+          <p class="description">Conócenos un poquito más</p>
+        </header>
+        <main class="acerca-de">
+          <img src="/assets/images/sobre-nosotros.webp" alt="Sobre Nosotros" width="400" height="400" />
+          <div>
+            <p>
+              Somos una iniciativa del CIFP Majada Marcial dedicada al
+              mantenimiento y reparación de equipos informáticos. Nos
+              especializamos en el área de redes, ofreciendo apoyo técnico al
+              alumnado y al personal del centro.
+            </p>
+            <p>
+              Nos encargamos del mantenimiento de la infraestructura de red,
+              asegurando su funcionamiento estable. También realizamos
+              reparaciones y sustituimos latiguillos o componentes en mal
+              estado.
+            </p>
+            <p>
+              Además, gestionamos servicios esenciales como DHCP y DNS para
+              que la red del centro opere correctamente. Nuestro objetivo es
+              garantizar un entorno tecnológico fiable para todas las
+              actividades del instituto.
+            </p>
+          </div>
+        </main>
+      </section>
+      <section id="servicios" class="servicios">
+        <header>
+          <h1 class="title">Nuestros Servicios</h1>
+          <p class="description">Qué ofrecemos para el centro</p>
+        </header>
+        <div class="servicios-grid">
+          <article class="servicio-card">
+            <div class="icon">🖥️</div>
+            <h3>Soporte y reparación</h3>
+            <p>
+              Diagnóstico y reparación de equipos, reemplazo de piezas y
+              mantenimiento.
+            </p>
+          </article>
+          <article class="servicio-card">
+            <div class="icon">🌐</div>
+            <h3>Redes y conectividad</h3>
+            <p>
+              Instalación y mantenimiento de redes, configuración de DHCP/DNS
+              y Wi‑Fi.
+            </p>
+          </article>
+          <article class="servicio-card">
+            <div class="icon">🔒</div>
+            <h3>Seguridad y formación</h3>
+            <p>
+              Medidas de seguridad y sesiones formativas para alumnado y
+              profesorado.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="horario" class="horario">
+        <header>
+          <h1 class="horario-title">Horario de atención</h1>
+          <p class="description">Abrimos de lunes a viernes — Mañana y tarde</p>
+        </header>
+
+        <div class="horario-container">
+          <table class="horario-table" aria-label="Horario de lunes a viernes">
+            <thead>
+              <tr>
+                <th>Horario</th>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mañana</th>
+                <td>08:00 - 14:00</td>
+                <td>08:00 - 14:00</td>
+                <td>08:00 - 14:00</td>
+                <td>08:00 - 14:00</td>
+                <td>08:00 - 14:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Tarde</th>
+                <td>16:00 — 22:00</td>
+                <td>16:00 — 22:00</td>
+                <td>16:00 — 22:00</td>
+                <td>16:00 — 22:00</td>
+                <td>16:00 — 22:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="contact" class="contacto">
+        <header>
+          <h1 class="title">Contacto</h1>
+          <p class="description">Ponte en contacto con nosotros</p>
+        </header>
+        <div class="contact-grid">
+          <aside class="contact-info">
+            <p>
+              Si tienes dudas o necesitas soporte, escríbenos o ven al centro.
+            </p>
+            <ul>
+              <li><strong>Dirección:</strong> CIFP Majada Marcial (Aula ATECA)</li>
+              <li><strong>Teléfono:</strong> 123 456 7890</li>
+              <li><strong>Email:</strong> contact@majadanet.com</li>
+            </ul>
+          </aside>
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-input">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" placeholder="Nombre" required />
+            </div>
+
+            <div class="contact-input">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Email" required />
+            </div>
+
+            <div class="contact-input">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tu mensaje" required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="button button-primary full-width">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand">
           <a href="/">
-            <img src="/assets/images/logo.webp" alt="Majada Logo" height="60" />
+            <img src="/assets/images/logo.webp" alt="Majada Logo" />
           </a>
-          <ul class="nav-links">
+        </div>
+
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <ul class="footer-links">
             <li><a href="#landing">Inicio</a></li>
             <li><a href="#acerca-de">Acerca de</a></li>
             <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
-          <ul class="nav-links">
-            <li>
-              <a href="#contact" class="button button-contact">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="landing" id="landing">
-          <div class="landing-cols">
-            <section class="landing-content">
-              <div class="landing-bubble">
-                <span
-                  >Abrimos el 8 de enero para alumnos y padres. ¡Gratis!</span
-                >
-              </div>
-              <h1>
-                Soluciones Informáticas en el Centro de <span>Majada</span>
-              </h1>
-              <p>
-                Creamos y mantenemos infraestructuras seguras, rápidas y fiables
-                para que nuestras aulas y sitios del centro puedan gozar de
-                buena conexión.
-              </p>
-              <div class="landing-buttons">
-                <a href="#servicios" class="button button-primary full-width"
-                  >Servicios</a
-                >
-                <a href="#acerca-de" class="button button-secondary full-width"
-                  >Conoce más</a
-                >
-              </div>
-            </section>
-            <img
-              class="landing-image"
-              src="/assets/images/landing.webp"
-              alt="Landing"
-            />
-          </div>
-        </section>
-        <section id="acerca-de">
-          <header>
-            <h1 class="title">Acerca de nosotros</h1>
-            <p class="description">Conócenos un poquito más</p>
-          </header>
-          <main class="acerca-de">
-            <img
-              src="/assets/images/sobre-nosotros.webp"
-              alt="Sobre Nosotros"
-              width="400"
-              height="400"
-            />
-            <div>
-              <p>
-                Somos una iniciativa del CIFP Majada Marcial dedicada al
-                mantenimiento y reparación de equipos informáticos. Nos
-                especializamos en el área de redes, ofreciendo apoyo técnico al
-                alumnado y al personal del centro.
-              </p>
-              <p>
-                Nos encargamos del mantenimiento de la infraestructura de red,
-                asegurando su funcionamiento estable. También realizamos
-                reparaciones y sustituimos latiguillos o componentes en mal
-                estado.
-              </p>
-              <p>
-                Además, gestionamos servicios esenciales como DHCP y DNS para
-                que la red del centro opere correctamente. Nuestro objetivo es
-                garantizar un entorno tecnológico fiable para todas las
-                actividades del instituto.
-              </p>
-            </div>
-          </main>
-        </section>
-        <section id="servicios" class="servicios">
-          <header>
-            <h1 class="title">Nuestros Servicios</h1>
-            <p class="description">Qué ofrecemos para el centro</p>
-          </header>
-          <div class="servicios-grid">
-            <article class="servicio-card">
-              <div class="icon">🖥️</div>
-              <h3>Soporte y reparación</h3>
-              <p>
-                Diagnóstico y reparación de equipos, reemplazo de piezas y
-                mantenimiento.
-              </p>
-            </article>
-            <article class="servicio-card">
-              <div class="icon">🌐</div>
-              <h3>Redes y conectividad</h3>
-              <p>
-                Instalación y mantenimiento de redes, configuración de DHCP/DNS
-                y Wi‑Fi.
-              </p>
-            </article>
-            <article class="servicio-card">
-              <div class="icon">🔒</div>
-              <h3>Seguridad y formación</h3>
-              <p>
-                Medidas de seguridad y sesiones formativas para alumnado y
-                profesorado.
-              </p>
-            </article>
-          </div>
-        </section>
-        <section id="horario" class="horario">
-          <header>
-            <h1 class="title">Horario de atención</h1>
-            <p class="description">Abrimos de lunes a viernes — Mañana y tarde</p>
-          </header>
-
-          <div class="horario-container">
-            <table class="horario-table" aria-label="Horario de lunes a viernes">
-              <thead>
-                <tr>
-                  <th>Horario</th>
-                  <th>Lun</th>
-                  <th>Mar</th>
-                  <th>Mié</th>
-                  <th>Jue</th>
-                  <th>Vie</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Mañana</th>
-                  <td colspan="5">08:00 — 14:00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Tarde</th>
-                  <td colspan="5">16:00 — 22:00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <section id="contact" class="contacto">
-          <header>
-            <h1 class="title">Contacto</h1>
-            <p class="description">Ponte en contacto con nosotros</p>
-          </header>
-          <div class="contact-grid">
-            <aside class="contact-info">
-              <p>
-                Si tienes dudas o necesitas soporte, escríbenos o ven al centro.
-              </p>
-              <ul>
-                <li><strong>Dirección:</strong> CIFP Majada Marcial (Aula ATECA)</li>
-                <li><strong>Teléfono:</strong> 123 456 7890</li>
-                <li><strong>Email:</strong> contact@majadanet.com</li>
-              </ul>
-            </aside>
-            <form class="contact-form" action="#" method="post">
-              <div class="contact-input">
-                <label for="name">Nombre</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Nombre"
-                  required
-                />
-              </div>
-
-              <div class="contact-input">
-                <label for="email">Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-
-              <div class="contact-input">
-                <label for="message">Mensaje</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="6"
-                  placeholder="Tu mensaje"
-                  required
-                ></textarea>
-              </div>
-
-              <div class="form-actions">
-                <button type="submit" class="button button-primary full-width">
-                  Enviar
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-col footer-brand">
-            <a href="/">
-              <img src="/assets/images/logo.webp" alt="Majada Logo" />
-            </a>
-          </div>
-
-          <div class="footer-col">
-            <h4>Enlaces</h4>
-            <ul class="footer-links">
-              <li><a href="#landing">Inicio</a></li>
-              <li><a href="#acerca-de">Acerca de</a></li>
-              <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Contacto</h4>
-            <ul class="footer-contact">
-              <li><strong>Dirección:</strong> CIFP Majada Marcial (Aula ATECA)</li>
-              <li><strong>Tel:</strong> <a href="tel:+600000000">123 456 7890</a></li>
-              <li><strong>Email:</strong> <a href="mailto:contact@majadanet.com">contact@majadanet.com</a></li>
-            </ul>
-          </div>
         </div>
 
-        <div class="legal">
-          <span>© 2025 MajadaNet. Todos los derechos reservados.</span>
-          <span>Diseñado por Ricardo y Rául</span>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-contact">
+            <li><strong>Dirección:</strong> CIFP Majada Marcial (Aula ATECA)</li>
+            <li><strong>Tel:</strong> <a href="tel:+600000000">123 456 7890</a></li>
+            <li><strong>Email:</strong> <a href="mailto:contact@majadanet.com">contact@majadanet.com</a></li>
+          </ul>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+
+      <div class="legal">
+        <span>© 2025 MajadaNet. Todos los derechos reservados.</span>
+        <span>Diseñado por Ricardo y Rául</span>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
