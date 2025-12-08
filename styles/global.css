@@ -11,7 +11,6 @@ html {
   margin: 0 auto;
 }
 
-/* botones */
 .button {
   display: inline-block;
   color: white;
@@ -86,6 +85,63 @@ input {
   font-family: var(--font-sans);
 }
 
+select {
+  font-family: var(--font-sans);
+}
+
 textarea {
   font-family: var(--font-sans);
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+sub {
+  font-size: 0.75em;
+  vertical-align: sub;
+}
+
+sup {
+  font-size: 0.75em;
+  vertical-align: super;
+}
+
+mark {
+  background-color: #ffeb3b;
+  padding: 0.1em 0.3em;
+  color: #000;
+}
+
+dl {
+  margin: 1rem 0;
+}
+
+dt {
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+dt:first-child {
+  margin-top: 0;
+}
+
+dd {
+  margin: 0.25rem 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+dd a {
+  color: #555;
+  line-height: 1.6;
 }
